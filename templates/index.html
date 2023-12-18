@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST Bill Generator</title>
+</head>
+<body>
+    <h1>GST Bill Generator</h1>
+    <form action="/generate_bill" method="post">
+        <label for="item_name">Item Name:</label>
+        <input type="text" id="item_name" name="item_name" required><br>
+
+        <label for="item_value">Item Value (in INR):</label>
+        <input type="number" id="item_value" name="item_value" required><br>
+
+        <label for="gst_percentage">GST Percentage:</label>
+        <input type="number" id="gst_percentage" name="gst_percentage" required><br>
+
+        <button type="submit">Generate GST Bill</button>
+    </form>
+</body>
+</html>
